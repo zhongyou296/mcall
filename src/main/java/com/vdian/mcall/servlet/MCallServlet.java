@@ -57,7 +57,19 @@ public class MCallServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        doGet(request, response);
+        request.setCharacterEncoding("UTF-8");
+        // 设置响应内容类型
+        response.setContentType("application/json;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        // 获取方法名
+        String methodName = request.getParameter("methodName");
+        String paramsStr = request.getParameter("params");
+        if (StringUtils.isBlank(methodName)) {
+            LOGGER.error("invokeMethod param is invalid, methodName={}, paramsStr={}", methodName, paramsStr);
+            out.println("参数有误，请检查参数格式...");
+        }
+        Map<String, Object> resultMap = invokeMethod(methodName, paramsStr);
+        out.println(JSON.toJSONString(resultMap));
     }
 
     private Map<String, Object> invokeMethod(String methodName, String paramsStr) throws ServletException {
