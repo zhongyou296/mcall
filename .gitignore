@@ -95,3 +95,4 @@ javadoc/
 cwallet.sso.lck
 /.idea/
 /mcall.iml
+/target/
