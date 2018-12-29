@@ -28,7 +28,8 @@
 ```
 
 五、在方法名上加上注解，注意必须是Spring的Bean
-示例：
+
+示例如下：
 ```java
 @Component
 public class HDFSManager {
