@@ -11,7 +11,7 @@
     
 三、在Spring的配置文件中添加MCall
 ```xml
-    <import resource="classpath:mcall-application.xml"/>
+<import resource="classpath:mcall-application.xml"/>
 ```
     
 四、在web.xml加入servlet过滤器
