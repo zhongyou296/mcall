@@ -1,15 +1,13 @@
-package com.vdian.mcall.dto;
+package com.zhongyou.mcall.dto;
 
 import java.lang.reflect.Method;
 
 /**
  * <p>文件名称：MethodDTO </p>
  * <p>文件描述：MCall存储的数据结构</p>
- * <p>版权所有：版权所有(C)2011-2099 </p>
- * <p>公   司：微店</p>
  * <p>完成日期：2017/6/12 </p>
  *
- * @author wangqiming
+ * @author zhongyou
  */
 public class MethodDTO<T> {
 

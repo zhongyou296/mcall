@@ -1,4 +1,4 @@
-package com.vdian.mcall.processor;
+package com.zhongyou.mcall.processor;
 
 import org.springframework.aop.framework.AdvisedSupport;
 import org.springframework.aop.framework.AopProxy;
@@ -9,13 +9,11 @@ import java.lang.reflect.Field;
 /**
  * <p>文件名称：AopTargetUtils </p>
  * <p>文件描述：</p>
- * <p>版权所有：版权所有(C)2011-2099 </p>
- * <p>公   司：微店</p>
  * <p>内容摘要：获取动态代理生成的Bean的父类对象的工具类</p>
  * <p>其他说明：</p>
  * <p>完成日期：2017/6/13</p>
  *
- * @author wangqiming
+ * @author zhongyou
  */
 public class AopTargetUtils {
 

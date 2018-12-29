@@ -1,10 +1,10 @@
-package com.vdian.mcall.processor;
+package com.zhongyou.mcall.processor;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Maps;
-import com.vdian.mcall.MCall;
-import com.vdian.mcall.dto.MethodDTO;
+import com.zhongyou.mcall.MCall;
+import com.zhongyou.mcall.dto.MethodDTO;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,11 +24,9 @@ import java.util.Map;
 /**
  * <p>文件名称：MCallProcessor </p>
  * <p>文件描述：对@MCall标记的处理器</p>
- * <p>版权所有：版权所有(C)2011-2099 </p>
- * <p>公   司：微店</p>
  * <p>完成日期：17/6/10 </p>
  *
- * @author wangqiming
+ * @author zhongyou
  */
 @Component
 public class MCallProcessor implements ApplicationContextAware {

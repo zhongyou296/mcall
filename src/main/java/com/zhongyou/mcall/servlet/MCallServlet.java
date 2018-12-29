@@ -1,9 +1,9 @@
-package com.vdian.mcall.servlet;
+package com.zhongyou.mcall.servlet;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
-import com.vdian.mcall.processor.MCallProcessor;
+import com.zhongyou.mcall.processor.MCallProcessor;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,18 +20,16 @@ import java.util.Map;
 /**
  * <p>文件名称：MCallServlet </p>
  * <p>文件描述：处理MCall相关的请求</p>
- * <p>版权所有：版权所有(C)2011-2099 </p>
- * <p>公   司：微店</p>
  * <p>完成日期：2017/6/12 </p>
  *
- * @author wangqiming
+ * @author zhongyou
  */
 public class MCallServlet extends HttpServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MCallServlet.class);
 
     /**
-     * 参数格式: http://127.0.01:8080/MCall?methodName=xx&params={paramName1:xx,paramName2:xx}
+     * 参数格式: http://127.0.0.1:8080/MCall?methodName=xx&params={paramName1:xx,paramName2:xx}
      *
      * @param request
      * @param response
